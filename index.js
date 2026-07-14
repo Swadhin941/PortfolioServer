@@ -30,7 +30,7 @@ function normalizeEmail(value = "") {
 }
 
 function extractEmail(message) {
-  return normalizeEmail(message.email || message.userEmail || message.from || message.senderEmail);
+  return normalizeEmail(message.Email || message.email || message.userEmail || message.from || message.senderEmail);
 }
 
 function buildMessageBody(message) {
